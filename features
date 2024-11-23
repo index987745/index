@@ -1,0 +1,65 @@
+script_key = "" --// key here
+getgenv().Index = {
+      ["Start"] = {
+        ["IntroBlur"] = {['Active'] = true}; 
+          ["Silent"] = {
+              ['Type'] = 'Target'; --// Fov, Target
+              ['ClosestPart'] = false;
+              ['TargetParts'] = 'HumanoidRootPart';
+              ['Air'] = 'Head';
+              ['Prediction'] = 0.0235;
+              ['Fov'] = {
+                  ['Transparency'] = 1;
+                  ['Visible'] = false;
+                  ['Thickness'] = 1;
+                  ['Color'] = Color3.fromRGB(111,111,11);
+                  ['Radius'] = 200;
+              };
+          };
+          ["TriggerBot"] = {
+              ['Notification'] = true;
+              ['Delay'] = 0.0001;
+              ['Blacklisted'] = {"[Knife]"};
+              ['Keybind'] = 'T';
+          };
+          ["SilentOffsets"] = {['Jump'] = -0.15; ['Fall'] = 0};
+          ["AimbotOffsets"] = {['Active'] = true; ['Jump'] = 3.40; ['Fall'] = 0.125};
+          ["AimBot"] = {
+              ['Notification'] = false;
+              ['Keybind'] = 'C';
+              ['Active'] = true;
+              ['Predictions'] = 0.11;
+              ['Smoothness'] = 0.1;
+              ['TargetParts'] = 'HumanoidRootPart';
+          };
+          ["MouseTp"] = {
+              ['Active'] = true,
+              ['LerpValues'] = 0.8; --// the higher the better the tp is
+              ['MousePredictions'] = 0.1;
+          };
+          ["Misc"] = {
+              ['Resolver'] = {
+                  ['Keybind'] = 'G';
+                  ['Active'] = false;
+                  ['Notifications'] = false;
+                  ['Adjust'] = 0.2;
+              };
+              ['Adjustment'] = {
+                  ['VelocityThresold'] = 100;
+              };
+              ['Macro'] = {
+                  ['Keybind'] = 'X';
+                  ['Active'] = true;
+                  ['Acceleration'] = 0.0;
+                  ['Variety'] = 'Third'; --// first
+              };
+              ['Spin'] = {
+                  ['Keybind'] = 'Z';
+                  ['Degrees'] = 360;
+                  ['Acceleration'] = 4000;
+                  ['Directions'] = 'North';
+                  ['Smoothness'] = 1;
+              };
+          };
+      };
+  };
