@@ -1,5 +1,5 @@
 script_key = getgenv().Index.Start.Key
-
+getgenv().scriptkey = script_key
 
 --[[
     This script has been licensed using Luarmor
