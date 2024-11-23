@@ -63,3 +63,5 @@ getgenv().Index = {
           };
       };
   };
+
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3cca50a1f2523e89cb399ef6440a27c9.lua"))()
