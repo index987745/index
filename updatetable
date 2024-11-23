@@ -1,0 +1,7 @@
+local enabled = true
+
+if getgenv().Loaded == true then
+    if enabled == true then
+    end
+    return
+end
