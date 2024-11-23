@@ -1,4 +1,4 @@
-script_key = "" --// key here
+script_key = "" --// key herea
 getgenv().Index = {
       ["Start"] = {
         ["IntroBlur"] = {['Active'] = true}; 
