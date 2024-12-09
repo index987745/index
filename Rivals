@@ -1,3 +1,4 @@
+
 script_key = '';
 getgenv().Rivals = {
     ["Silent"] = {
@@ -23,23 +24,20 @@ getgenv().Rivals = {
         ["ShowBox"] = true;
         ["ShowBoxOutline"] = true;
         ["ShowHealthbar"] = true;
-        ["ShowDisplayName"] = true;
-        ["ShowDistance"] = true;
-        ["ShowHealthText"] = true;
+        ["ShowDisplayName"] = false;
+        ["ShowDistance"] = false;
+        ["ShowHealthText"] = false;
         ["ShowHealthBarOutline"] = true;
-        ["ShowTracer"] = true;
-        ["TracerPosition"] = 'Mouse'; --// other opts: TopCenter
-        ["GradientBoxTrasnparency"] = 0.4;
+        ["GradientBoxTrasnparency"] = 0.1;
         ["Color"] = {
-            ['GradientStart'] = Color3.new(0.000000, 0.000000, 0.000000);
-            ['GradientEnd'] = Color3.new(1.000000, 1.000000, 1.000000);
-            ['Box'] = Color3.new(1.000000, 1.000000, 1.000000);
+            ['GradientStart'] = Color3.new(0.858824, 0.031373, 0.031373);
+            ['GradientEnd'] = Color3.new(1.000000, 0.964706, 0.964706);
+            ['Box'] = Color3.new(1.000000, 0.984314, 0.984314);
             ['BoxOutline'] = Color3.new(0.000000, 0.000000, 0.000000);
             ['HealthBar'] = Color3.new(0.011765, 1.000000, 0.062745);
-            ['Tracer'] = Color3.new(0.000000, 0.000000, 0.000000);
         };
         ["GradientFov"] = {
-            ['Transparency'] = 0.85;
+            ['Transparency'] = 0.5;
             ['Show'] = true;
             ['Radius'] = 500;
             ['Rotate'] = true;
@@ -49,5 +47,4 @@ getgenv().Rivals = {
         };
     };
 };
-
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/2bfc83f7b713bfb9c6455ebadc06075c.lua"))()
