@@ -1,14 +1,13 @@
-
 script_key = '';
 getgenv().Rivals = {
     ["Silent"] = {
         ["UseFov"] = true;
         ["Pred"] = 0;
 
-        ["ClosestPart"] = true;
-        ["TargetPart"] = "HumanoidRootPart";
+        ["ClosestPart"] = false;
+        ["TargetPart"] = "Head";
 
-        ["WallCheck"] = true;
+        ["WallCheck"] = false;
         ["Fov"] = {
             ['Color'] = Color3.fromRGB(111,111,22);
             ['Show'] = false;
@@ -20,7 +19,7 @@ getgenv().Rivals = {
     };
     ["Visuals"] = {
         ["Enabled"] = true;
-        ["ShowGradientBox"] = true;
+        ["ShowGradientBox"] = false;
         ["ShowBox"] = true;
         ["ShowBoxOutline"] = true;
         ["ShowHealthbar"] = true;
@@ -37,13 +36,19 @@ getgenv().Rivals = {
             ['HealthBar'] = Color3.new(0.011765, 1.000000, 0.062745);
         };
         ["GradientFov"] = {
-            ['Transparency'] = 0.5;
+            ['Transparency'] = 0.7;
             ['Show'] = true;
-            ['Radius'] = 500;
+            ['Radius'] = 400;
             ['Rotate'] = true;
-            ['RotationSpeed'] = 5;
-            ['Start'] = Color3.new(0.905882, 0.427451, 0.427451);
+            ['RotationSpeed'] = 2;
+            ['Start'] = Color3.new(1.000000, 1.000000, 1.000000);
             ['End'] = Color3.new(0.000000, 0.000000, 0.000000);
+        };
+        ["HitDetections"] = {
+            ['HitModifications'] = true; 
+            ['HitSounds'] = true; 
+            ['Volume'] = 20; 
+            ['Sounds'] = 'Rust'; --// (options: "RIFK7", "Bubble", "Minecraft", "Cod", "Neverlose", "GameSense", "Rust".)
         };
     };
 };
