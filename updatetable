@@ -1,13 +1,13 @@
-script_key = "" --// key here
+script_key="eaiWNdZFlOzNZQMSLZWQZNjoVJXOaZyM";
 getgenv().Index = {
     ["Start"] = {
         ["IntroBlur"] = { ['Active'] = true },
         ["Silent"] = {
-            ['Type'] = 'Fov', --// Fov, Target
+            ['Type'] = 'Target', --// Fov, Target
             ['ClosestPart'] = false,
-            ['TargetParts'] = 'HumanoidRootPart',
+            ['TargetParts'] = 'Head',
             ['Air'] = 'Head',
-            ['Prediction'] = 0.0235,
+            ['Prediction'] = 0.02,
             ['Fov'] = {
                 ['Transparency'] = 1,
                 ['Visible'] = false,
@@ -23,26 +23,21 @@ getgenv().Index = {
             ['Keybind'] = 'T',
         },
         ["SilentOffsets"] = { ['Jump'] = -0.15, ['Fall'] = 0 },
-        ["AimbotOffsets"] = { ['Active'] = true, ['Jump'] = 3.40, ['Fall'] = 0.125 },
+        ["AimbotOffsets"] = { ['Active'] = true, ['Jump'] = 4, ['Fall'] = 0.125 },
         ["AimBot"] = {
             ['Notification'] = false,
             ['Keybind'] = 'C',
             ['Active'] = true,
-            ['Predictions'] = 0,
+            ['Predictions'] = 0.18,
             ['Smoothness'] = 1,
-            ['TargetParts'] = 'HumanoidRootPart',
+            ['TargetParts'] = 'Head',
         },
         ["MouseTp"] = {
             ['Active'] = true,
-            ['LerpValues'] = 0.8, --// the higher the better the tp is
+            ['LerpValues'] = 1, --// the higher the better the tp is
             ['MousePredictions'] = 0.1,
         },
         ["Misc"] = {
-            ['RapidFire'] = {
-                ['Active'] = true,
-                ['Cooldown'] = math.huge,
-                ['SlowDown'] = 0.01,
-            },
             ['Resolver'] = {
                 ['Keybind'] = 'G',
                 ['Active'] = false,
@@ -65,6 +60,9 @@ getgenv().Index = {
                 ['Directions'] = 'North',
                 ['Smoothness'] = 1,
             },
+            ['Checks'] = {
+                ['KO'] = true
+            }
         },
     },
 }
