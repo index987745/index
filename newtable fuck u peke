@@ -1,9 +1,10 @@
+
 script_key="eaiWNdZFlOzNZQMSLZWQZNjoVJXOaZyM";
 getgenv().Index = {
     ["Start"] = {
         ["IntroBlur"] = { ['Active'] = true },
         ["Silent"] = {
-            ['Type'] = 'Target', --// Fov, Target
+            ['Type'] = 'Target', --// Fov, Target, 
             ['ClosestPart'] = false,
             ['TargetParts'] = 'Head',
             ['Air'] = 'Head',
@@ -31,6 +32,10 @@ getgenv().Index = {
             ['Predictions'] = 0.18,
             ['Smoothness'] = 1,
             ['TargetParts'] = 'Head',
+        },
+        ['HitboxExpander'] = {
+            ['Enabled'] = true,
+            ['Size'] = 20,
         },
         ["MouseTp"] = {
             ['Active'] = true,
