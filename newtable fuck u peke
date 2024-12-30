@@ -1,10 +1,9 @@
-
 script_key="eaiWNdZFlOzNZQMSLZWQZNjoVJXOaZyM";
 getgenv().Index = {
     ["Start"] = {
         ["IntroBlur"] = { ['Active'] = true },
         ["Silent"] = {
-            ['Type'] = 'Target', --// Fov, Target, 
+            ['Type'] = 'Target',
             ['ClosestPart'] = false,
             ['TargetParts'] = 'Head',
             ['Air'] = 'Head',
@@ -39,7 +38,7 @@ getgenv().Index = {
         },
         ["MouseTp"] = {
             ['Active'] = true,
-            ['LerpValues'] = 1, --// the higher the better the tp is
+            ['LerpValues'] = 1,
             ['MousePredictions'] = 0.1,
         },
         ["Misc"] = {
@@ -53,10 +52,10 @@ getgenv().Index = {
                 ['VelocityThresold'] = 100,
             },
             ['Macro'] = {
-                ['Keybind'] = 'X',
+                ['Keybind'] = 'K',
                 ['Active'] = true,
                 ['Acceleration'] = 0.0,
-                ['Variety'] = 'Third', --// first
+                ['Variety'] = 'Third',
             },
             ['Spin'] = {
                 ['Keybind'] = 'Z',
@@ -65,9 +64,17 @@ getgenv().Index = {
                 ['Directions'] = 'North',
                 ['Smoothness'] = 1,
             },
+            ['WalkSpeed'] = {
+                ['Active'] = true,
+                ['Speed'] = 1000,
+                ['Keybind'] = 'X',
+            },
+            ['NoJumpCoolDown'] = {
+                ['Active'] = true,
+            },
             ['Checks'] = {
-                ['KO'] = true
-            }
+                ['KO'] = true,
+            },
         },
     },
 }
