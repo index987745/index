@@ -1,9 +1,10 @@
 script_key="eaiWNdZFlOzNZQMSLZWQZNjoVJXOaZyM";
+
 getgenv().Index = {
     ["Start"] = {
         ["IntroBlur"] = { ['Active'] = true },
         ["Silent"] = {
-            ['Type'] = 'Target',
+            ['Type'] = 'Target', -- Fov, Target
             ['ClosestPart'] = false,
             ['TargetParts'] = 'Head',
             ['Air'] = 'Head',
@@ -25,6 +26,7 @@ getgenv().Index = {
         ["SilentOffsets"] = { ['Jump'] = -0.15, ['Fall'] = 0 },
         ["AimbotOffsets"] = { ['Active'] = true, ['Jump'] = 4, ['Fall'] = 0.125 },
         ["AimBot"] = {
+            ['ClosestPart'] = false,
             ['Notification'] = false,
             ['Keybind'] = 'C',
             ['Active'] = true,
@@ -32,10 +34,20 @@ getgenv().Index = {
             ['Smoothness'] = 1,
             ['TargetParts'] = 'Head',
         },
+        ["Style"] = {
+            ['Easing'] = 'Elastic', -- Linear, Sine, Quad, Cubic, Exponential, Back, Bounce, Elastic
+            ['Direction'] = 'InOut', -- In, Out, InOut
+        },
         ['HitboxExpander'] = {
-            ['Enabled'] = false,
-            ['Visualize'] = false,
-            ['Size'] = 10,
+            ['Enabled'] = true,
+            ['Visualize'] = true,
+            ['Scaling'] = {
+                ['Enabled'] = false, -- if this is enabled it will automatically disable the normalsize make it into XYZ Size scaling
+                ['X'] = 11,
+                ['Y'] = 1,
+                ['Z'] = 1
+            },
+            ['NormalSize'] = 15,     
         },
         ["MouseTp"] = {
             ['Active'] = true,
@@ -56,7 +68,7 @@ getgenv().Index = {
                 ['Keybind'] = 'X',
                 ['Active'] = true,
                 ['Acceleration'] = 0.0,
-                ['Variety'] = 'Third',
+                ['Variety'] = 'Third', -- First, Third
             },
             ['Spin'] = {
                 ['Keybind'] = 'Z',
