@@ -39,4 +39,4 @@ getgenv().Rivals = {
         };
     };
 };
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/2bfc83f7b713bfb9c6455ebadc06075c.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/84e15decd01ae49c28d64fe046b30ce4.lua"))()
