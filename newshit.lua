@@ -1,3 +1,4 @@
+
 local library, object, global, typeface = 
 	{pointers = {}, flags = {}, configs = {}, activekeys = {}, functions = {}, hud = {}, windows = {}, popups = {}, loaded = false}, 
 	{objects = {}, assets = {}, accents = {}, signals = {}, callbacks = {}}, 
@@ -5,7 +6,7 @@ local library, object, global, typeface =
 	loadstring(game:HttpGet "https://github.com/fayvrit/Typeface/raw/refs/heads/main/Register.lua")()
 
 library.bindstr = global.json("decode", global.request {Url = "https://github.com/fayvrit/millionware/raw/refs/heads/main/bindstr.json"}.Body)
-library.accent = global.rgb(255, 139, 62)
+library.accent = global.rgb(255, 255, 255)
 library.menubind = Enum.KeyCode.Insert
 library.core = global.hui
 
@@ -1153,19 +1154,16 @@ library.window = function(self, info)
 		})
 
 		objects['icon'] = objects['logo']:create("ImageLabel", {
-    ScaleType = Enum.ScaleType.Slice,
-    BorderColor3 = global.rgb(0, 0, 0),
-    Image = "rbxassetid://132692563033966",
-    BackgroundTransparency = 1,
-    Position = UDim2.new(0.5, -148, 0.5, -63),  -- Centered position
-    Name = "icon",
-    Size = global.dim2(0, 120, 0, 54),  -- Increased size
-    BorderSizePixel = 0,
-    BackgroundColor3 = global.rgb(255, 255, 255)
-})
-
-
-		
+            ScaleType = Enum.ScaleType.Slice,
+            BorderColor3 = global.rgb(0, 0, 0),
+            Image = "rbxassetid://132692563033966",
+            BackgroundTransparency = 1,
+            Position = UDim2.new(0.5, -148, 0.5, -63),  
+            Name = "icon",
+            Size = global.dim2(0, 120, 0, 54),
+            BorderSizePixel = 0,
+            BackgroundColor3 = global.rgb(255, 255, 255)
+        })
 
 		objects ['pagebuttons'] = objects ['sidepanel']:create("Frame", {
 			BorderColor3 = global.rgb(0, 0, 0),
@@ -1750,7 +1748,7 @@ library.toggle = function(self, info)
 			BorderColor3 = global.rgb(0, 0, 0),
 			Size = global.dim2(0, 8, 0, 8),
 			BorderSizePixel = 0,
-			BackgroundColor3 = global.rgb(255, 255, 255)
+			BackgroundColor3 = library.accent,
 			BackgroundTransparency = info.enabled and 0 or 1
 		})
 
