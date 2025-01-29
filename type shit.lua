@@ -1152,19 +1152,20 @@ library.window = function(self, info)
 			BackgroundColor3 = global.rgb(255, 255, 255)
 		})
 
-	objects['icon'] = objects['logo']:create("ImageLabel", {
-             ScaleType = Enum.ScaleType.Slice,
+		objects['icon'] = objects['logo']:create("ImageLabel", {
+    ScaleType = Enum.ScaleType.Slice,
     BorderColor3 = global.rgb(0, 0, 0),
     Image = "rbxassetid://132692563033966",
     BackgroundTransparency = 1,
-    Position = UDim2.new(0.5, -148, 0.5, -63),  
+    Position = UDim2.new(0.5, -148, 0.5, -63),  -- Centered position
     Name = "icon",
-    Size = global.dim2(0, 120, 0, 54),  
+    Size = global.dim2(0, 120, 0, 54),  -- Increased size
     BorderSizePixel = 0,
     BackgroundColor3 = global.rgb(255, 255, 255)
 })
 
 
+		
 
 		objects ['pagebuttons'] = objects ['sidepanel']:create("Frame", {
 			BorderColor3 = global.rgb(0, 0, 0),
@@ -1749,7 +1750,7 @@ library.toggle = function(self, info)
 			BorderColor3 = global.rgb(0, 0, 0),
 			Size = global.dim2(0, 8, 0, 8),
 			BorderSizePixel = 0,
-			BackgroundColor3 = library.accent,
+			BackgroundColor3 = global.rgb(255, 255, 255)
 			BackgroundTransparency = info.enabled and 0 or 1
 		})
 
