@@ -1154,16 +1154,17 @@ library.window = function(self, info)
 		})
 
 		objects['icon'] = objects['logo']:create("ImageLabel", {
-            ScaleType = Enum.ScaleType.Slice,
-            BorderColor3 = global.rgb(0, 0, 0),
-            Image = "rbxassetid://132692563033966",
-            BackgroundTransparency = 1,
-            Position = UDim2.new(0.5, -148, 0.5, -63),  
-            Name = "icon",
-            Size = global.dim2(0, 120, 0, 54),
-            BorderSizePixel = 0,
-            BackgroundColor3 = global.rgb(255, 255, 255)
-        })
+    ScaleType = Enum.ScaleType.Slice,
+    BorderColor3 = global.rgb(0, 0, 0),
+    Image = "rbxassetid://132692563033966",
+    BackgroundTransparency = 1,
+    Position = UDim2.new(0.5, -100, 0.5, -63),  
+    Name = "icon",
+    Size = global.dim2(0, 180, 0, 80), 
+    BorderSizePixel = 0,
+    BackgroundColor3 = global.rgb(255, 255, 255)
+})
+
 
 		objects ['pagebuttons'] = objects ['sidepanel']:create("Frame", {
 			BorderColor3 = global.rgb(0, 0, 0),
